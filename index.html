@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BME — Accès sécurisé</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="visual-panel">
+        <img src="bme-illustration.png" alt="Emblème du Bureau des Missions Exceptionnelles">
+      </div>
+      <div class="content-panel">
+        <p class="eyebrow">BME — Bureau des Missions Exceptionnelles</p>
+        <h1>Accès sécurisé</h1>
+        <p class="tagline">Certains moments ne doivent pas être expliqués.<br>Ils doivent être vécus.</p>
+        <form id="login-form" class="login-card">
+          <label for="identifiant">Identifiant</label>
+          <input id="identifiant" value="JQ-0731" autocomplete="username">
+          <label for="password">Mot de passe</label>
+          <input id="password" type="password" placeholder="••••" autocomplete="current-password">
+          <button type="submit">Accéder au dossier</button>
+          <p id="message" class="message" role="status"></p>
+        </form>
+        <p class="confidential">CONFIDENTIEL — DIFFUSION STRICTEMENT LIMITÉE</p>
+      </div>
+    </section>
+  </main>
+  <div id="success-screen" class="success-screen" hidden>
+    <div class="success-card">
+      <p class="eyebrow">Authentification réussie</p>
+      <h2>Bienvenue, Julien.</h2>
+      <p>Dossier BME-JQ-0731</p>
+      <p class="level">Niveau d'accès : 3/10</p>
+      <button id="close-success">Entrer dans le dossier</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
