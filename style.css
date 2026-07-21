@@ -218,3 +218,64 @@ background-size:32px 32px}
     white-space: normal;
   }
 }
+@media (max-device-width: 768px) {
+  .portal-layout {
+    display: block !important;
+  }
+
+  .sidebar {
+    width: 100% !important;
+    min-height: auto !important;
+    border-right: none !important;
+    border-bottom: 1px solid var(--line) !important;
+    padding: 14px !important;
+  }
+
+  .identity-card,
+  .sidebar-note {
+    display: none !important;
+  }
+
+  .nav-list {
+    margin: 0 !important;
+    display: flex !important;
+    gap: 8px !important;
+    overflow-x: auto !important;
+  }
+
+  .nav-btn {
+    width: auto !important;
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+  }
+
+  .content-area {
+    width: 100% !important;
+    padding: 20px 15px 40px !important;
+    overflow: visible !important;
+  }
+
+  .document-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .doc-item {
+    display: flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .doc-item > div {
+    min-width: 0 !important;
+  }
+
+  .doc-item h3,
+  .doc-item p {
+    white-space: normal !important;
+  }
+}
