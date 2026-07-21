@@ -179,3 +179,42 @@ background-size:32px 32px}
   .doc-item{align-items:flex-start}
   .doc-item .text-btn{display:none}
 }
+
+@media (max-width: 768px) {
+  .portal-layout {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+  }
+
+  .content-area {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .document-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: visible;
+  }
+
+  .doc-item {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .doc-item > div {
+    min-width: 0;
+  }
+
+  .doc-item h3,
+  .doc-item p {
+    white-space: normal;
+  }
+}
