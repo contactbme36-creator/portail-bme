@@ -885,3 +885,74 @@ input:focus {
     justify-self: start;
   }
 }
+
+/* CORRECTION DÉFINITIVE DES DOCUMENTS SUR MOBILE */
+@media screen and (max-width: 900px) {
+
+  .document-list {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .document-list > .doc-item {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+
+    margin: 0 0 12px 0 !important;
+    padding: 16px !important;
+  }
+
+  .document-list > .doc-item > div {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 12px !important;
+
+    width: auto !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+
+  .document-list > .doc-item > div > div {
+    display: block !important;
+    width: auto !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+
+  .document-list .doc-icon {
+    flex: 0 0 38px !important;
+  }
+
+  .document-list .doc-item h3 {
+    display: block !important;
+    width: auto !important;
+    margin: 0 0 4px !important;
+
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .document-list .doc-item p {
+    display: block !important;
+    width: auto !important;
+    margin: 0 !important;
+
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .document-list .text-btn {
+    display: block !important;
+    flex: 0 0 auto !important;
+    margin-left: 12px !important;
+  }
+}
