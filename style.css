@@ -956,3 +956,41 @@ input:focus {
     margin-left: 12px !important;
   }
 }
+
+/* AFFICHAGE DOCUMENTS — UNE CARTE PAR LIGNE */
+.document-list {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 12px !important;
+}
+
+.document-list > .doc-item {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+
+  margin: 0 !important;
+  padding: 18px !important;
+}
+
+.document-list > .doc-item > div {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 14px !important;
+  min-width: 0 !important;
+}
+
+.document-list .doc-item h3,
+.document-list .doc-item p {
+  width: auto !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+}
